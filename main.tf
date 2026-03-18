@@ -58,7 +58,7 @@ resource "azurerm_network_interface" "my_nic" {
 
 # 6. The Virtual Machine
 resource "azurerm_linux_virtual_machine" "my_vm" {
-  name                = "vj-linux-vm"
+  name                = "vj-practice-vm"
   resource_group_name = data.azurerm_resource_group.existing_rg.name
   location            = data.azurerm_resource_group.existing_rg.location
   size                = "Standard_D2s_v3"
